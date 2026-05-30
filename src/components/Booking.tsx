@@ -7,10 +7,14 @@ const serviceOptions = [
   'Кондиционер', 'Кузовные работы', 'Другое',
 ];
 
+const SEND_URL = 'https://functions.poehali.dev/571f799e-4b67-400a-b714-77cba3fbce2d';
+
 export default function Booking() {
   const [visible, setVisible] = useState(false);
   const [form, setForm] = useState({ name: '', phone: '', car: '', service: '', date: '', comment: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -26,9 +30,23 @@ export default function Booking() {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+    try {
+      const res = await fetch(SEND_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError('Не удалось отправить заявку. Позвоните нам: 8 (918) 893-56-29');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -173,10 +191,14 @@ export default function Booking() {
                     />
                   </div>
 
-                  <button type="submit" className="rz-btn-primary w-full flex items-center justify-center gap-3">
-                    <Icon name="CalendarCheck" size={18} />
-                    Отправить заявку
+                  <button type="submit" disabled={loading} className="rz-btn-primary w-full flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed">
+                    <Icon name={loading ? 'Loader' : 'CalendarCheck'} size={18} className={loading ? 'animate-spin' : ''} />
+                    {loading ? 'Отправляем...' : 'Отправить заявку'}
                   </button>
+
+                  {error && (
+                    <p className="text-red-400 text-xs text-center leading-relaxed">{error}</p>
+                  )}
 
                   <p className="text-rz-gray text-xs text-center leading-relaxed">
                     Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
