@@ -73,7 +73,7 @@ export default function Footer() {
             <h4 className="font-oswald uppercase text-sm tracking-widest text-rz-white mb-5">Контакты</h4>
             <div className="space-y-4">
               {[
-                { icon: 'MapPin', text: 'г. Цимлянск,\nул. Гагарина, 42' },
+                { icon: 'MapPin', text: 'г. Цимлянск,\nул. Красноармейская, 89/88' },
                 { icon: 'Phone', text: '8 (800) 123-45-67' },
                 { icon: 'Clock', text: 'Пн–Сб: 8:00–20:00\nВс: 9:00–18:00' },
               ].map(item => (

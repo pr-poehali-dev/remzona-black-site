@@ -86,7 +86,7 @@ export default function FAQ() {
                 </div>
                 <div>
                   <div className="text-rz-gray text-xs font-oswald uppercase tracking-widest mb-0.5">Адрес</div>
-                  <div className="text-rz-white font-oswald font-semibold">г. Цимлянск, ул. Гагарина, 42</div>
+                  <div className="text-rz-white font-oswald font-semibold">г. Цимлянск, ул. Красноармейская, 89/88</div>
                 </div>
               </div>
             </div>

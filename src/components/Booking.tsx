@@ -54,7 +54,7 @@ export default function Booking() {
             {/* Contact info */}
             <div className="space-y-6">
               {[
-                { icon: 'MapPin', label: 'Адрес', value: 'г. Цимлянск, ул. Гагарина, 42' },
+                { icon: 'MapPin', label: 'Адрес', value: 'г. Цимлянск, ул. Красноармейская, 89/88' },
                 { icon: 'Phone', label: 'Телефон', value: '8 (800) 123-45-67' },
                 { icon: 'Clock', label: 'Режим работы', value: 'Пн–Сб: 8:00 – 20:00, Вс: 9:00 – 18:00' },
                 { icon: 'MessageCircle', label: 'WhatsApp/Telegram', value: '+7 (928) 123-45-67' },
