@@ -75,7 +75,7 @@ export default function Footer() {
               {[
                 { icon: 'MapPin', text: 'г. Цимлянск,\nул. Красноармейская, 89/88' },
                 { icon: 'Phone', text: '8 (918) 893-56-29' },
-                { icon: 'Clock', text: 'Пн–Сб: 8:00–20:00\nВс: 9:00–18:00' },
+                { icon: 'Clock', text: 'Вт–Сб: 9:00–18:00' },
               ].map(item => (
                 <div key={item.icon} className="flex items-start gap-3">
                   <Icon name={item.icon} size={14} className="text-rz-red mt-0.5 flex-shrink-0" />
