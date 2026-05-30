@@ -13,7 +13,7 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 96%;
 
-    --primary: 0 75% 50%;
+    --primary: 142 72% 37%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 12%;
@@ -22,7 +22,7 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 55%;
 
-    --accent: 0 75% 50%;
+    --accent: 142 72% 37%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,13 +30,13 @@
 
     --border: 0 0% 14%;
     --input: 0 0% 14%;
-    --ring: 0 75% 50%;
+    --ring: 142 72% 37%;
 
     --radius: 0.25rem;
 
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 0 75% 50%;
+    --sidebar-primary: 142 72% 37%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 0 0% 96%;
@@ -117,7 +117,7 @@ body::before {
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e02020;
+  background: #16a34a;
   border-radius: 2px;
 }
 
@@ -129,7 +129,7 @@ body::before {
   left: 0;
   width: 0;
   height: 1px;
-  background: #e02020;
+  background: #16a34a;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {
@@ -142,8 +142,8 @@ body::before {
     -45deg,
     transparent,
     transparent 10px,
-    rgba(224, 32, 32, 0.04) 10px,
-    rgba(224, 32, 32, 0.04) 20px
+    rgba(22, 163, 74, 0.04) 10px,
+    rgba(22, 163, 74, 0.04) 20px
   );
 }
 
@@ -157,13 +157,13 @@ body::before {
 
 /* Glow effect */
 .red-glow {
-  text-shadow: 0 0 30px rgba(224, 32, 32, 0.5);
+  text-shadow: 0 0 30px rgba(22, 163, 74, 0.5);
 }
 
 .card-hover-glow:hover {
   box-shadow:
-    0 0 30px rgba(224, 32, 32, 0.15),
-    inset 0 0 0 1px rgba(224, 32, 32, 0.3);
+    0 0 30px rgba(22, 163, 74, 0.15),
+    inset 0 0 0 1px rgba(22, 163, 74, 0.3);
 }
 
 /* Stagger animation delays */

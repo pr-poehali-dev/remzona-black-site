@@ -2,17 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import Icon from '@/components/ui/icon';
 
 const advantages = [
-  { icon: 'Award', title: 'Гарантия на работы', desc: 'Даём письменную гарантию на все виды ремонта от 6 месяцев до 2 лет' },
   { icon: 'Users', title: 'Опытные мастера', desc: 'Каждый механик имеет стаж не менее 7 лет и регулярно проходит обучение' },
   { icon: 'Package', title: 'Оригинальные запчасти', desc: 'Работаем только с проверенными поставщиками. Предоставляем документы на запчасти' },
   { icon: 'Clock', title: 'Точные сроки', desc: 'Соблюдаем договорённые сроки ремонта. При задержке — скидка на следующее ТО' },
-];
-
-const team = [
-  { name: 'Алексей Романов', role: 'Главный механик', exp: '15 лет' },
-  { name: 'Дмитрий Волков', role: 'Электрик', exp: '10 лет' },
-  { name: 'Сергей Попов', role: 'Кузовщик', exp: '12 лет' },
-  { name: 'Андрей Крылов', role: 'Мастер диагностики', exp: '8 лет' },
+  { icon: 'Wrench', title: 'Любые марки авто', desc: 'Обслуживаем отечественные и иностранные автомобили всех классов и годов выпуска' },
 ];
 
 export default function About() {
@@ -37,7 +30,7 @@ export default function About() {
       </div>
 
       <div ref={ref} className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <div className={`transition-all duration-700 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
             <div className="flex items-center gap-3 mb-4">
@@ -87,34 +80,6 @@ export default function About() {
                   {a.title}
                 </h3>
                 <p className="text-rz-gray text-xs leading-relaxed">{a.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Team */}
-        <div className={`transition-all duration-700 delay-300 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="flex items-center gap-4 mb-8">
-            <h3 className="font-oswald font-bold uppercase text-2xl text-rz-white tracking-wide">
-              Наша команда
-            </h3>
-            <div className="flex-1 h-px bg-rz-border" />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {team.map((member, i) => (
-              <div
-                key={member.name}
-                className="rz-card text-center group card-hover-glow"
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <div className="w-16 h-16 bg-rz-border mx-auto mb-4 flex items-center justify-center group-hover:bg-rz-red/10 transition-colors">
-                  <Icon name="User" size={28} className="text-rz-gray group-hover:text-rz-red transition-colors" />
-                </div>
-                <h4 className="font-oswald font-semibold text-sm text-rz-white uppercase tracking-wide mb-1 leading-tight">
-                  {member.name}
-                </h4>
-                <p className="text-rz-red text-xs font-oswald uppercase tracking-widest mb-2">{member.role}</p>
-                <p className="text-rz-gray text-xs">Стаж: {member.exp}</p>
               </div>
             ))}
           </div>

@@ -51,13 +51,6 @@ const services = [
     price: 'от 1 800 ₽',
     tag: null,
   },
-  {
-    icon: 'Shield',
-    title: 'Кузовные работы',
-    desc: 'Рихтовка, шпаклёвка, покраска. Устранение вмятин без покраски (PDR).',
-    price: 'от 3 000 ₽',
-    tag: null,
-  },
 ];
 
 export default function Services() {

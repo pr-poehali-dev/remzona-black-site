@@ -72,9 +72,9 @@ export default {
 					dark: '#111111',
 					card: '#161616',
 					border: '#222222',
-					red: '#e02020',
-					'red-bright': '#ff2a2a',
-					'red-dark': '#a01515',
+					red: '#16a34a',
+					'red-bright': '#22c55e',
+					'red-dark': '#15803d',
 					gray: '#888888',
 					'gray-light': '#cccccc',
 					white: '#f5f5f5',
@@ -115,8 +115,8 @@ export default {
 					to: { opacity: '1', transform: 'scale(1)' }
 				},
 				'glow-pulse': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(224,32,32,0.3)' },
-					'50%': { boxShadow: '0 0 40px rgba(224,32,32,0.7)' }
+					'0%, 100%': { boxShadow: '0 0 20px rgba(22,163,74,0.3)' },
+					'50%': { boxShadow: '0 0 40px rgba(22,163,74,0.7)' }
 				},
 				'line-grow': {
 					from: { width: '0%' },
