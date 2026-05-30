@@ -4,7 +4,7 @@ import Icon from '@/components/ui/icon';
 const faqs = [
   {
     q: 'Как записаться на ремонт?',
-    a: 'Заполните форму на сайте, позвоните по телефону 8 (800) 123-45-67 или напишите в WhatsApp/Telegram. Мы подтвердим запись в течение 30 минут.',
+    a: 'Заполните форму на сайте, позвоните по телефону 8 (918) 893-56-29 или напишите в WhatsApp/Telegram. Мы подтвердим запись в течение 30 минут.',
   },
   {
     q: 'Какие марки автомобилей вы обслуживаете?',
@@ -70,13 +70,13 @@ export default function FAQ() {
             </p>
 
             <div className="space-y-4">
-              <a href="tel:+78001234567" className="flex items-center gap-4 group">
+              <a href="tel:+79188935629" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-rz-red/10 border border-rz-red/30 flex items-center justify-center group-hover:bg-rz-red transition-all duration-300">
                   <Icon name="Phone" size={18} className="text-rz-red group-hover:text-white transition-colors" />
                 </div>
                 <div>
                   <div className="text-rz-gray text-xs font-oswald uppercase tracking-widest mb-0.5">Позвонить</div>
-                  <div className="text-rz-white font-oswald font-semibold">8 (800) 123-45-67</div>
+                  <div className="text-rz-white font-oswald font-semibold">8 (918) 893-56-29</div>
                 </div>
               </a>
               <div className="h-px bg-rz-border" />

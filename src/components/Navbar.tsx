@@ -68,9 +68,9 @@ export default function Navbar() {
 
         {/* CTA + Burger */}
         <div className="flex items-center gap-4">
-          <a href="tel:+78001234567" className="hidden md:flex items-center gap-2 text-rz-red font-oswald text-sm uppercase tracking-widest hover:text-rz-red-bright transition-colors">
+          <a href="tel:+79188935629" className="hidden md:flex items-center gap-2 text-rz-red font-oswald text-sm uppercase tracking-widest hover:text-rz-red-bright transition-colors">
             <Icon name="Phone" size={14} />
-            <span>8 (800) 123-45-67</span>
+            <span>8 (918) 893-56-29</span>
           </a>
           <button
             onClick={() => handleNavClick('#booking')}
@@ -100,9 +100,9 @@ export default function Navbar() {
                 {item.label}
               </button>
             ))}
-            <a href="tel:+78001234567" className="flex items-center gap-2 text-rz-red font-oswald text-sm uppercase tracking-widest mt-4">
+            <a href="tel:+79188935629" className="flex items-center gap-2 text-rz-red font-oswald text-sm uppercase tracking-widest mt-4">
               <Icon name="Phone" size={14} />
-              <span>8 (800) 123-45-67</span>
+              <span>8 (918) 893-56-29</span>
             </a>
           </nav>
         </div>

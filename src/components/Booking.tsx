@@ -55,9 +55,9 @@ export default function Booking() {
             <div className="space-y-6">
               {[
                 { icon: 'MapPin', label: 'Адрес', value: 'г. Цимлянск, ул. Красноармейская, 89/88' },
-                { icon: 'Phone', label: 'Телефон', value: '8 (800) 123-45-67' },
+                { icon: 'Phone', label: 'Телефон', value: '8 (918) 893-56-29' },
                 { icon: 'Clock', label: 'Режим работы', value: 'Пн–Сб: 8:00 – 20:00, Вс: 9:00 – 18:00' },
-                { icon: 'MessageCircle', label: 'WhatsApp/Telegram', value: '+7 (928) 123-45-67' },
+                { icon: 'MessageCircle', label: 'WhatsApp/Telegram', value: '8 (918) 893-56-29' },
               ].map(item => (
                 <div key={item.label} className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-rz-red/10 border border-rz-red/30 flex items-center justify-center flex-shrink-0 mt-0.5">
